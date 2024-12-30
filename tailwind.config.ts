@@ -11,6 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#6F36D9",
+        dark: "#09091a",
+      },
+      fontFamily: {
+        onest: ["var(--font-onest-sans)", "sans-serif"],
+        etude: ["var(--font-etude)", "sans-serif"],
       },
     },
   },
