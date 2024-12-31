@@ -3,6 +3,7 @@ import HomeSection from "@/components/shared/home-section";
 import AboutSection from "@/components/shared/about-section";
 import StatisticsSection from "@/components/shared/statistics-section";
 import OfferSection from "@/components/shared/offer-section";
+import RequestSection from "@/components/shared/request-section";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <AboutSection />
         <StatisticsSection />
         <OfferSection />
+        <RequestSection />
       </main>
     </div>
   );
