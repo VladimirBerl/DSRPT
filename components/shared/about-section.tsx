@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="flex items-start justify-between gap-10 max-lg:flex-col">
+    <section className="flex items-start justify-between gap-10 max-lg:flex-col mb-[180px] max-xl:mb-[92px]">
       <div>
         <Image
           className="rounded max-md:w-[154px] max-md:h-[154px]"

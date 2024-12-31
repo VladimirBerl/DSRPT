@@ -4,7 +4,7 @@ import TelegramIcon from "@/public/telegram.svg";
 
 export default function HomeSection() {
   return (
-    <section className="flex justify-between py-[180px] max-sm:flex-col max-xl:py-[92px] ">
+    <section className="flex justify-between max-sm:flex-col py-[180px] max-xl:py-[92px] ">
       <div className="flex flex-col justify-between">
         <h1 className="font-etude font-medium text-[72px] max-xl:text-[48px] max-lg:text-[32px] max-sm:text-[26px] max-sm:mb-[190px] leading-[96%] uppercase">
           Запуск <br /> стартапов <br /> и цифровая <br /> трансформация <br />

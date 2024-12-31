@@ -19,6 +19,22 @@ export default {
         onest: ["var(--font-onest-sans)", "sans-serif"],
         etude: ["var(--font-etude)", "sans-serif"],
       },
+      animation: {
+        swaying: "swaying 2s ease-in-out infinite",
+      },
+      keyframes: {
+        swaying: {
+          "0%": {
+            transform: "translateY(5%)",
+          },
+          "50%": {
+            transform: "translateY(-5%)",
+          },
+          "100%": {
+            transform: "translateY(5%)",
+          },
+        },
+      },
     },
   },
   plugins: [],
