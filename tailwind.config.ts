@@ -13,6 +13,7 @@ export default {
         foreground: "var(--foreground)",
         primary: "#6F36D9",
         dark: "#09091a",
+        grey: "#76768C",
       },
       fontFamily: {
         onest: ["var(--font-onest-sans)", "sans-serif"],

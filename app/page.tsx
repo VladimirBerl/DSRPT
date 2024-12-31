@@ -1,5 +1,6 @@
 import Header from "@/components/shared/header";
 import HomeSection from "@/components/shared/home-section";
+import AboutSection from "@/components/shared/about-section";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Header />
       <main>
         <HomeSection />
+        <AboutSection />
       </main>
     </div>
   );
