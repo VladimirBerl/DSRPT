@@ -60,7 +60,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 w-full ${headerClass} transition-all`}
+      className={`fixed top-0 left-0 right-0 w-full z-50 ${headerClass} transition-all`}
     >
       <div className="container flex items-center justify-between mx-auto px-5 my-5 h-[64px]">
         <Link

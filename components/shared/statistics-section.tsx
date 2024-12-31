@@ -45,7 +45,7 @@ export default function StatisticsSection() {
   return (
     <section className="flex items-center justify-between mb-[180px] max-xl:mb-[92px] max-xl:flex-col gap-10">
       <Image
-        className="animate-swaying"
+        className="animate-swaying z-[-1]"
         src="/figure-statistics.svg"
         width={320}
         height={300}
@@ -58,7 +58,7 @@ export default function StatisticsSection() {
         >
           0+
         </h5>
-        <p className="absolute max-w-[658px] font-etude uppercase text-[40px] max-xl:text-xl leading-[44px]">
+        <p className="max-w-[658px] font-medium font-etude uppercase text-[40px] max-xl:text-xl leading-[44px]">
           {text}
         </p>
       </div>
