@@ -7,19 +7,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderItem from "@/components/ui/SliderItem";
+import Image from "next/image";
 
 export default function SliderSection() {
   const settings = {
-    // dots: true, // Показывать точки
-    // infinite: true, // Зациклить слайдер
-    speed: 500, // Скорость перехода
-    slidesToShow: 1, // Показывать 1 слайд за раз
-    slidesToScroll: 1, // Прокручивать 1 слайд за раз
-    vertical: true, // Включаем вертикальную прокрутку
-    verticalSwiping: true, // Включаем поддержку вертикального свайпа
-    arrows: true, // Выключаем стрелки
-    // autoplay: true, // Включаем автопрокрутку
-    // autoplaySpeed: 3000, // Время между слайдами
+    speed: 500,
+    vertical: true,
+    verticalSwiping: true,
+    swipeToSlide: true,
   };
 
   const items = [
@@ -29,12 +24,13 @@ export default function SliderSection() {
   ];
 
   return (
-    <section className="mb-[180px] max-xl:mb-[92px] relative h-[836px]">
+    <section className="relative mb-[180px] max-xl:mb-[92px] h-[836px] max-md:h-[400px]">
       <Slider {...settings}>
         {items.map((item, index) => (
           <SliderItem key={index} title={item.title} subtitle={item.subtitle} />
         ))}
       </Slider>
+      <Image className="absolute z-[-1] pointer-events-none top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/circle-slider.png" alt="slider" width={836} height={836} />
     </section>
   );
 }
