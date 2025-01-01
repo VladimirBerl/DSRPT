@@ -6,6 +6,7 @@ import OfferSection from "@/components/shared/offer-section";
 import RequestSection from "@/components/shared/request-section";
 import SliderSection from "@/components/shared/slider-section";
 import StrengthsSection from "@/components/shared/strengths-section";
+import ResultSection from "@/components/shared/result-section";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <RequestSection />
         <SliderSection />
         <StrengthsSection />
+        <ResultSection />
       </main>
     </div>
   );
