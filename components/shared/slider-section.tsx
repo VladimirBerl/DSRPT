@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderItem from "@/components/ui/SliderItem";
-import Image from "next/image";
 
 const SliderSection = () => {
   const [progress, setProgress] = useState(33);
@@ -40,13 +39,6 @@ const SliderSection = () => {
           style={{ height: `${progress}%` }}
         ></div>
       </div>
-      <Image
-        className="absolute z-[-1] pointer-events-none top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        src="/circle-slider.png"
-        alt="slider"
-        width={836}
-        height={836}
-      />
     </section>
   );
 };
