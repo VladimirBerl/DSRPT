@@ -15,30 +15,15 @@ body {
 }
 
 .slick-slide {
-  margin-right: 28px;
-  height: 100%; /* Добавляем промежуток между слайдами */
+  margin-right: 20px;
+  height: 100%;
+}
+.slick-slide:last-child {
+  margin-right: 0;
 }
 
-/* Убедимся, что слайды не выходят за пределы контейнера */
-.slider-container .slick-list {
-  overflow: hidden;
-}
-
-/* Настройки для точного контроля */
 .slider-container .slick-track {
   display: flex;
   height: 100%;
-}
-
-.slider-container .slick-slide {
-  width: calc(50% - 14px); /* 50% ширины слайдов, отнимаем промежуток */
-  height: 100%;
-}
-
-@media (max-width: 1024px) {
-  .slider-container .slick-slide {
-    width: calc(100%);
-    margin: 0;
-    /* 100% ширины слайдов, отнимаем промежуток */
-  }
+  gap: 20px;
 }

@@ -17,6 +17,7 @@ const SliderSection = () => {
 
   const settings = {
     speed: 500,
+    infinite: false,
     vertical: true,
     verticalSwiping: true,
     swipeToSlide: true,

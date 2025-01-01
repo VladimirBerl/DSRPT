@@ -23,7 +23,7 @@ export default function StrengthsSection() {
       </div>
 
       <div className="flex-col mt-[-80px] max-lg:mt-[80px] max-md:mt-[32px]">
-        <div className="w-1/2 max-lg:w-full ml-auto rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10">
+        <div className="w-1/2 max-lg:w-full ml-auto rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10 border-[1.5px] border-[#e5e7eb33]">
           <div className="flex max-[320px]:flex-col max-[320px]:items-start items-center gap-6 backdrop-blur-sm p-[32px] pb-[40px] max-md:px-[16px] max-md:py-[24px]">
             <div className="flex items-center gap-2 py-[9px] px-[7.5px] max-w-[48px]">
               <p className="text-grey ">01</p>
@@ -41,7 +41,7 @@ export default function StrengthsSection() {
           </ul>
         </div>
 
-        <div className="w-1/2 max-lg:w-full rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10">
+        <div className="w-1/2 max-lg:w-full rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10 border-[1.5px] border-[#e5e7eb33]">
           <div className="flex max-[320px]:flex-col max-[320px]:items-start items-center gap-6  backdrop-blur-sm p-[32px] pb-[40px] max-md:px-[16px] max-md:py-[24px]">
             <div className="flex items-center gap-2 py-[9px] px-[7.5px] max-w-[48px]">
               <p className="text-grey ">02</p>
@@ -58,7 +58,7 @@ export default function StrengthsSection() {
           </ul>
         </div>
 
-        <div className="w-1/2 max-lg:w-full ml-auto rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10">
+        <div className="w-1/2 max-lg:w-full ml-auto rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10 border-[1.5px] border-[#e5e7eb33]">
           <div className="flex max-[320px]:flex-col max-[320px]:items-start items-center gap-6  backdrop-blur-sm p-[32px] pb-[40px] max-md:px-[16px] max-md:py-[24px]">
             <div className="flex items-center gap-2 py-[9px] px-[7.5px] max-w-[48px]">
               <p className="text-grey ">03</p>
@@ -75,7 +75,7 @@ export default function StrengthsSection() {
           </ul>
         </div>
 
-        <div className="w-1/2 max-lg:w-full rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10">
+        <div className="w-1/2 max-lg:w-full rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10 border-[1.5px] border-[#e5e7eb33]">
           <div className="flex max-[320px]:flex-col max-[320px]:items-start items-center gap-6  backdrop-blur-sm p-[32px] pb-[40px] max-md:px-[16px] max-md:py-[24px]">
             <div className="flex items-center gap-2 py-[9px] px-[7.5px] max-w-[48px]">
               <p className="text-grey ">04</p>
@@ -94,7 +94,7 @@ export default function StrengthsSection() {
           </ul>
         </div>
 
-        <div className="w-1/2 max-lg:w-full ml-auto rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10">
+        <div className="w-1/2 max-lg:w-full ml-auto rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10 border-[1.5px] border-[#e5e7eb33]">
           <div className="flex max-[320px]:flex-col max-[320px]:items-start items-center gap-6  backdrop-blur-sm p-[32px] pb-[40px] max-md:px-[16px] max-md:py-[24px]">
             <div className="flex items-center gap-2 py-[9px] px-[7.5px] max-w-[48px]">
               <p className="text-grey ">05</p>
@@ -111,7 +111,7 @@ export default function StrengthsSection() {
           </ul>
         </div>
 
-        <div className="w-1/2 max-lg:w-full rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10">
+        <div className="w-1/2 max-lg:w-full rounded-[24px] overflow-hidden bg-white/5 backdrop-blur-sm mb-10 border-[1.5px] border-[#e5e7eb33]">
           <div className="flex max-[320px]:flex-col max-[320px]:items-start items-center gap-6  backdrop-blur-sm p-[32px] pb-[40px] max-md:px-[16px] max-md:py-[24px]">
             <div className="flex items-center gap-2 py-[9px] px-[7.5px] max-w-[48px]">
               <p className="text-grey ">06</p>

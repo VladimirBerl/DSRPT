@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function ResultSection() {
+  const [progress, setProgress] = React.useState(0);
+
   const settings = {
     speed: 500,
     infinite: false,
@@ -14,6 +16,9 @@ export default function ResultSection() {
     centerMode: false,
     focusOnSelect: true,
     slidesToScroll: 1,
+    afterChange: (current: number) => {
+      setProgress(current);
+    },
     responsive: [
       {
         breakpoint: 1024,
@@ -27,13 +32,15 @@ export default function ResultSection() {
 
   return (
     <section className="mt-[180px] max-md:mt-[92px]">
-      <h4 className="font-etude text-[60px] max-lg:text-[48px] max-md:text-[28px] leading-[100%] font-medium uppercase mb-[80px] max-md:mb-[32px]">
-        Реальные результаты наших <br /> клиентов
-      </h4>
+      <div className="container mx-auto px-5">
+        <h4 className="font-etude text-[60px] max-lg:text-[48px] max-md:text-[28px] leading-[100%] font-medium uppercase mb-[80px] max-md:mb-[32px]">
+          Реальные результаты наших <br /> клиентов
+        </h4>
+      </div>
 
-      <div className="slider-container">
+      <div className="slider-container container mx-auto">
         <Slider {...settings}>
-          <div className="flex flex-col justify-between min-h-[790px] max-lg:min-h-[410px] bg-custom-gradient p-10 max-lg:p-4 max-lg:pt-8 rounded-[32px] backdrop-blur-sm">
+          <div className="min-h-[410px] h-full bg-custom-gradient p-10 max-lg:p-4 max-lg:pt-8 rounded-[32px] backdrop-blur-sm border-[1.5px] border-[#e5e7eb33]">
             <div>
               <p className="font-etude font-medium text-[24px] max-lg:text-[14px] leading-[116%] uppercase mb-10 max-lg:mb-8">
                 Проект А
@@ -48,7 +55,7 @@ export default function ResultSection() {
               </h5>
             </div>
 
-            <div>
+            <div className="">
               <p className="text-grey max-lg:text-[12px] leading-[124%] uppercase mb-3 max-lg:mb-2">
                 Решение
               </p>
@@ -71,7 +78,7 @@ export default function ResultSection() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between min-h-[790px] max-lg:min-h-[410px] bg-custom-gradient p-10 max-lg:p-4 max-lg:pt-8 rounded-[32px] backdrop-blur-sm">
+          <div className="min-h-[410px] h-full bg-custom-gradient p-10 max-lg:p-4 max-lg:pt-8 rounded-[32px] backdrop-blur-sm border-[1.5px] border-[#e5e7eb33]">
             <div>
               <p className="font-etude font-medium text-[24px] max-lg:text-[14px] leading-[116%] uppercase mb-10 max-lg:mb-8">
                 Проект B
@@ -104,6 +111,19 @@ export default function ResultSection() {
             </div>
           </div>
         </Slider>
+      </div>
+
+      <div className="container mx-auto px-5 hidden max-lg:flex items-center gap-2 justify-center mt-7">
+        <div
+          className={`w-[8px] h-[8px] rounded-full transition-all duration-500 ${
+            progress === 0 ? "bg-primary" : "bg-grey"
+          }`}
+        ></div>
+        <div
+          className={`w-[8px] h-[8px] rounded-full transition-all duration-500 ${
+            progress === 1 ? "bg-primary" : "bg-grey"
+          }`}
+        ></div>
       </div>
     </section>
   );

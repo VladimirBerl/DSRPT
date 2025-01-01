@@ -7,21 +7,27 @@ import RequestSection from "@/components/shared/request-section";
 import SliderSection from "@/components/shared/slider-section";
 import StrengthsSection from "@/components/shared/strengths-section";
 import ResultSection from "@/components/shared/result-section";
+import ContactUsSection from "@/components/shared/contact-us-section";
+import Footer from "@/components/shared/footer";
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-5 font-[family-name:var(--font-onest-sans)]">
+    <div>
       <Header />
       <main>
-        <HomeSection />
-        <AboutSection />
-        <StatisticsSection />
-        <OfferSection />
-        <RequestSection />
-        <SliderSection />
-        <StrengthsSection />
+        <div className="container mx-auto px-5 font-[family-name:var(--font-onest-sans)]">
+          <HomeSection />
+          <AboutSection />
+          <StatisticsSection />
+          <OfferSection />
+          <RequestSection />
+          <SliderSection />
+          <StrengthsSection />
+        </div>
         <ResultSection />
+        <ContactUsSection />
       </main>
+      <Footer />
     </div>
   );
 }
