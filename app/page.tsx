@@ -15,6 +15,7 @@ export default function Home() {
     <div>
       <Header />
       <main>
+        <div className="canvasContainer"></div>
         <div className="container mx-auto px-5 font-[family-name:var(--font-onest-sans)]">
           <HomeSection />
           <AboutSection />

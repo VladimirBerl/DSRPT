@@ -8,9 +8,17 @@ interface OfferCardProps {
   images: string;
 }
 
-export default function OfferCard({ card }: { card: OfferCardProps }) {
+export default function OfferCard({
+  card,
+  className,
+}: {
+  card: OfferCardProps;
+  className?: string;
+}) {
   return (
-    <div className="relative flex flex-col overflow-hidden rounded-[32px] p-[32px] max-sm:p-[16px] pt-[60px] max-sm:pt-[32px] h-full text-dark bg-white hover:bg-primary hover:text-white group transition-all duration-500">
+    <div
+      className={`relative flex flex-col overflow-hidden rounded-[32px] p-[32px] max-sm:p-[16px] pt-[60px] max-sm:pt-[32px] h-full text-dark bg-white hover:bg-primary hover:text-white group transition-all duration-500 ${className}`}
+    >
       <h5 className="font-etude font-medium text-[26px] max-sm:text-[17px] uppercase mb-[28px]">
         {card.title}
       </h5>
