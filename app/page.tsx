@@ -9,11 +9,12 @@ import StrengthsSection from "@/components/shared/strengths-section";
 import ResultSection from "@/components/shared/result-section";
 import ContactUsSection from "@/components/shared/contact-us-section";
 import Footer from "@/components/shared/footer";
-
+import ThreeScene from "@/scripts/js/ThreeScene";
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <ThreeScene />
       <Header />
       <main>
         <div className="container mx-auto px-5 font-[family-name:var(--font-onest-sans)]">
@@ -29,6 +30,6 @@ export default function Home() {
         <ContactUsSection />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
