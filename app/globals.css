@@ -35,6 +35,34 @@ body {
   z-index: -1;
 }
 
+.decore-text {
+  -webkit-text-stroke: 1px #5858ff;
+  background: #3a1e75;
+  background: linear-gradient(
+    90deg,
+    #3a1e75,
+    #090919 32%,
+    #201245 82%,
+    #090919
+  );
+  -webkit-text-stroke-color: linear-gradient(
+    0deg,
+    rgba(94, 25, 191, 0.7) 0%,
+    rgba(228, 209, 255, 0.7) 36%,
+    rgba(94, 25, 191, 0.7) 82%,
+    rgba(255, 255, 255, 0.1)
+  );
+  text-stroke-color: linear-gradient(
+    0deg,
+    rgba(94, 25, 191, 0.7) 0%,
+    rgba(228, 209, 255, 0.7) 36%,
+    rgba(94, 25, 191, 0.7) 82%,
+    rgba(255, 255, 255, 0.1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .slick-slide {
   margin-right: 20px;
   height: 100%;

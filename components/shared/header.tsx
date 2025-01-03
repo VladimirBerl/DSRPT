@@ -11,6 +11,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrollDisabled, setIsScrollDisabled] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0); // Для отслеживания направления скролла
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true); // Состояние для отображения хедера
 
   useEffect(() => {
     const checkScreenWidthAndToggleScroll = () => {
@@ -40,6 +42,16 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Скрываем/показываем хедер в зависимости от направления скролла
+      if (window.scrollY > lastScrollY && window.scrollY > 50) {
+        // Скроллим вниз
+        setIsHeaderVisible(false);
+      } else if (window.scrollY < lastScrollY) {
+        // Скроллим вверх
+        setIsHeaderVisible(true);
+      }
+      setLastScrollY(window.scrollY);
+
       if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
@@ -52,7 +64,7 @@ export default function Header() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   const headerClass = isScrolled
     ? "bg-[#09091a] bg-opacity-90"
@@ -60,7 +72,9 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 w-full z-50 ${headerClass} transition-all`}
+      className={`fixed top-0 left-0 right-0 w-full z-50 ${headerClass} transition-all ${
+        isHeaderVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
     >
       <div className="container flex items-center justify-between mx-auto px-5 my-5 h-[64px]">
         <Link

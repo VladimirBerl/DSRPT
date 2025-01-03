@@ -40,25 +40,25 @@ export default function OfferSection() {
     },
   ];
 
-  useEffect(() => {
-    gsap.fromTo(
-      ".offer-grid",
-      {
-        x: 2000,
-      },
-      {
-        x: -2000,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "center center",
-          end: "bottom top",
-          scrub: 1,
-          pin: true,
-          markers: false,
-        },
-      }
-    );
-  }, []);
+  // useEffect(() => {
+  //   gsap.fromTo(
+  //     ".offer-grid",
+  //     {
+  //       x: 2000,
+  //     },
+  //     {
+  //       x: -2000,
+  //       scrollTrigger: {
+  //         trigger: sectionRef.current,
+  //         start: "center center",
+  //         end: "bottom top",
+  //         scrub: 1,
+  //         pin: true,
+  //         markers: false,
+  //       },
+  //     }
+  //   );
+  // }, []);
 
   return (
     <section ref={sectionRef} className="mb-[180px] max-xl:mb-[92px]">

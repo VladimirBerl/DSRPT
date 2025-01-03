@@ -52,25 +52,6 @@ export default function StatisticsSection() {
   }, [currentIndex, numbers]);
 
   React.useEffect(() => {
-    if (sectionRef.current) {
-      gsap.to(sectionRef.current, {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "center center",
-          end: "bottom top",
-          pin: true,
-          scrub: true,
-          onUpdate: (self) => {
-            const progress = self.progress;
-            const index = Math.floor(progress * numbers.length);
-            setCurrentIndex(index === 3 ? 2 : index);
-          },
-        },
-      });
-    }
-  }, [numbers.length]);
-
-  React.useEffect(() => {
     const images = document.querySelectorAll(".image-stack img");
     gsap.to(images, {
       yPercent: (index: number) => {
@@ -91,6 +72,26 @@ export default function StatisticsSection() {
       },
     });
   }, []);
+
+  React.useEffect(() => {
+    if (sectionRef.current) {
+      gsap.to(sectionRef.current, {
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "center center", // начало анимации при достижении верхней части
+          end: "bottom+=3000 top", // увеличиваем end, чтобы анимация длилась дольше
+          pin: true,
+          scrub: 1,
+          markers: true,
+          onUpdate: (self) => {
+            const progress = self.progress;
+            const index = Math.floor(progress * numbers.length);
+            setCurrentIndex(index === 3 ? 2 : index);
+          },
+        },
+      });
+    }
+  }, [numbers.length]);
 
   return (
     <section
@@ -117,7 +118,7 @@ export default function StatisticsSection() {
       <div className="max-xl:w-full text-left ml-auto">
         <h5
           ref={humberRef}
-          className="font-etude w-[710px] max-xl:w-full max-xl:text-left font-medium text-[230px] max-xl:text-[180px] max-md:text-[80px] leading-[100%] text-primary"
+          className="decore-text font-etude w-[710px] max-xl:w-full max-xl:text-left font-medium text-[230px] max-xl:text-[180px] max-md:text-[80px] leading-[100%] text-primary"
         >
           0+
         </h5>
