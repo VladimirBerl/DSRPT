@@ -82,7 +82,7 @@ export default function StatisticsSection() {
           end: "bottom+=3000 top", // увеличиваем end, чтобы анимация длилась дольше
           pin: true,
           scrub: 1,
-          markers: true,
+          // markers: true,
           onUpdate: (self) => {
             const progress = self.progress;
             const index = Math.floor(progress * numbers.length);
