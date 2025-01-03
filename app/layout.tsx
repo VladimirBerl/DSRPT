@@ -45,6 +45,12 @@ export default function RootLayout({
     <html lang="ru">
       <body className={`${onest.variable} ${etude.variable} antialiased`}>
         {children}
+        <script
+          src="https://unpkg.com/three@0.172.0/build/three.module.js"
+          type="module"
+          defer
+        ></script>
+        <script src="/scripts/js/main.js" type="module" defer></script>
       </body>
     </html>
   );

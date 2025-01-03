@@ -10,12 +10,12 @@ import ResultSection from "@/components/shared/result-section";
 import ContactUsSection from "@/components/shared/contact-us-section";
 import Footer from "@/components/shared/footer";
 
+
 export default function Home() {
   return (
     <div>
       <Header />
       <main>
-        <div className="canvasContainer"></div>
         <div className="container mx-auto px-5 font-[family-name:var(--font-onest-sans)]">
           <HomeSection />
           <AboutSection />

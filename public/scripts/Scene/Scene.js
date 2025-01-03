@@ -1,5 +1,6 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import * as THREE from "https://unpkg.com/three@0.172.0/build/three.module.js";
+import { OrbitControls } from "https://unpkg.com/three@0.172.0/examples/jsm/controls/OrbitControls.js";
+
 
 export const Scene = _ => {
     const isScreen = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i

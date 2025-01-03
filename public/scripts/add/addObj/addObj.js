@@ -1,11 +1,13 @@
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import * as THREE from "https://unpkg.com/three@0.172.0/build/three.module.js";
 
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
-import { createDodSolid } from '../../create/createDodSolid/createDodSolid';
-import { createLogoSegments } from '../../create/createLogoSegments/createLogoSegments';
-import { createLogoSolid } from '../../create/createLogoSolid/createLogoSolid';
-import { createDodSegments } from '../../create/createDodSegments/createDodSegments copy';
+import { GLTFLoader } from "https://unpkg.com/three@0.172.0/examples/jsm/loaders/GLTFLoader.js";
+import { DRACOLoader } from "https://unpkg.com/three@0.172.0/examples/jsm/loaders/DRACOLoader.js";
+
+
+import { createDodSolid } from '../../create/createDodSolid/createDodSolid.js';
+import { createLogoSegments } from '../../create/createLogoSegments/createLogoSegments.js';
+import { createLogoSolid } from '../../create/createLogoSolid/createLogoSolid.js';
+import { createDodSegments } from '../../create/createDodSegments/createDodSegments copy.js';
 
 export const addObj = (scene, camera, orbitControls) => {
 
@@ -120,6 +122,7 @@ export const addObj = (scene, camera, orbitControls) => {
         .test(navigator.userAgent);
 
     const canvasContainer = document.getElementsByClassName('canvasContainer')[0];
+    console.log(canvasContainer);
 
     const ray = new THREE.Ray();
 

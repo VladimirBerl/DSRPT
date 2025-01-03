@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from "https://unpkg.com/three@0.172.0/build/three.module.js";
 const dodMat = new THREE.MeshStandardMaterial({ color: 'blueviolet', metalness: 1, roughness: .6 });
 
 export const createLogoSolid = (sceneData, rot_container) => {
