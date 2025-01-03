@@ -6,6 +6,7 @@ import { Scene } from "../Scene/Scene"; // Убедитесь, что прави
 import { addObj } from "../add/addObj/addObj"; // Убедитесь, что правильно указан путь
 import { anim_checkpoints_conf } from "../conf/anim_checkpoints_conf"; // Убедитесь, что правильно указан путь
 
+
 const ThreeScene = () => {
   useEffect(() => {
     const { scene, camera, renderer, orbitControls } = Scene();
