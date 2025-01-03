@@ -78,8 +78,8 @@ export default function StatisticsSection() {
       gsap.to(sectionRef.current, {
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "center center", // начало анимации при достижении верхней части
-          end: "bottom+=3000 top", // увеличиваем end, чтобы анимация длилась дольше
+          start: "center center",
+          end: "bottom+=9000 top",
           pin: true,
           scrub: 1,
           // markers: true,
